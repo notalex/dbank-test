@@ -7,6 +7,7 @@ require('chai')
   .use(require('chai-as-promised'))
   .should()
 
+// https://www.trufflesuite.com/docs/truffle/testing/writing-tests-in-javascript
 contract('dBank', ([deployer, user]) => {
   let dbank, token
   const interestPerSecond = 31668017 //(10% APY) for min. deposit (0.01 ETH)
